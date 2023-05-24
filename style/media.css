@@ -114,7 +114,7 @@
     top: 100%;
     left: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.808);
     backdrop-filter: blur(6px);
     display: flex;
     flex-direction: column;
