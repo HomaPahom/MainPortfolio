@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">    
+    <link rel="stylesheet" href="./style/media.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+    <nav class="nav container">
+        <div class="nav-links">
+            <ul class="header__link">
+                <li class="header__link_list">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="header__link_list">
+                    <a href="#about_me">About me</a>
+                </li>
+                <li class="header__link_list">
+                    <a href="#skills">Skills</a>
+                </li>
+                <li class="header__link_list">
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li class="header__link_list">
+                    <a href="#contacts">Contacts</a>
+                </li>
+            </ul>
+        </div>
+        <button class="hamburger">
+            <img src="./img/humburger.png" alt="">
+        </button>
+
+        <button class="close">
+            <img src="./img/close.png" alt="">
+        </button>
+    </nav>
+
+
+        
+
+        <div class="header__information container">
+            <div class="header__information_txt">
+                <h1 class="header__information_txt_name">
+                    Ilkhom Suleymanov
+                </h1>
+                <p class="header__information_txt_subtitle">
+                    UX | UI designer 20 years old,Tashkent
+                </p>
+                <!-- eng -->
+                    <button class="language">
+                        <a href="./rus/index.html" class="rus">RUS</a>
+                        <a href="./index.html" class="rus">ENG</a>
+                    </button>
+                    
+            </div>
+            <img src="./img/bg.jpg" alt="" class="photo__bg">
+        </div>
+    </header>   
+
+    <main class="main">
+        <section class="about__me" id="about_me">
+            <h2 class="about__me_title">
+                About me
+            </h2>
+            <p class="about__me_subtitle">
+                Hi, I'm Ilkhom – UX/UI designer from Tashkent. I'm interested in design and everything connected with it.
+            </p>
+
+            <p class="about__me_subtitle">
+                I'm studying at courses "Web and mobile design interfaces" in IT-Academy.
+            </p>
+
+
+            <p class="about__me_subtitle_last">
+                Ready to implement excellent projects with wonderful people.
+            </p>
+        </section>
+
+
+        <section class="skills" id="skills">
+            <h3 class="skills_title">
+                Skills
+            </h3>
+
+            <p class="skills_subtitle">
+                I work in such programs as
+            </p>
+
+            <div class="skills_cards container">
+                <div class="skillscards-crard" data-tilt>
+                    <img src="./img/photoshop.png" alt="">
+                    <p class="skills_cards_name">
+                        Adobe Photoshop
+                    </p>
+                    <img src="./img/photoshops.png" alt="">
+                </div>
+
+                <div class="skillscards-crard" data-tilt>
+                    <img src="./img/ai.png" alt="">
+                    <p class="skills_cards_name">
+                        Adobe Illustrator
+                    </p>
+                    <img src="./img/ais.png" alt="">
+                </div>
+
+                <div class="skillscards-crard" data-tilt>
+                    <img src="./img/ae.png" alt="">
+                    <p class="skills_cards_name">
+                        Adobe After Effects
+                    </p>
+                    <img src="./img/photoshops.png" alt="">
+                </div>
+
+                <div class="skillscards-crard" data-tilt >
+                    <img src="./img/figma.png" alt="">
+                    <p class="skills_cards_name">
+                        Figma
+                    </p>
+                    <img src="./img/photoshops.png" alt="">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="portfolio" id="portfolio">
+            <h4 class="portfolio__title">
+                Portfolio
+            </h4>
+
+            <div class="portfolio__cards">
+                <img src="./img/portfolio5.png" alt="" class="portfolio__one" data-tilt>
+                <a href="./adidas/index.html" class="portfolio__one_title">
+                    SPORTSWEAR
+                </a>
+
+                <img src="./img/portfolio6.png" alt="" class="portfolio__second" data-tilt>
+                <a href="./thlby/index.html" class="portfolio__one_title">
+                    Turbo Car Wash
+                </a>
+
+                <img src="./img/portfolio7.png" alt="" class="portfolio__three" data-tilt>
+                <a href="./escape/index.html" class="portfolio__one_title_three">
+                    Travel Around The World
+                </a>
+            </div>
+        </section>
+    </main>
+        <footer class="footer" id="contacts">
+            <h5 class="contact__title">
+                Contacts
+            </h5>
+
+            <p class="contact__subtitle">
+                Want to know more or just chat? 
+                You are welcome!
+            </p>
+
+            <a href="mailto:pahom6091@gmail.com" class="contact__btn">
+                Send message
+            </a>    
+
+            <div class="social__icon container">
+                <a href="https://www.instagram.com/homa_6091/">
+                    <img src="./img/in.png" alt="">
+                </a>
+                <a href="https://www.instagram.com/homa_6091/">
+                    <img src="./img/i.png" alt="">
+                </a>
+                <a href="https://www.instagram.com/homa_6091/">
+                    <img src="./img/b.png" alt="">
+                </a>
+                <a href="https://www.instagram.com/homa_6091/">
+                    <img src="./img/ba.png" alt="">
+                </a>
+            </div>
+
+            <div class="social__icon_title">
+                Like me on LinkedIn, Instagram, Behance, Dribble
+            </div>
+        </footer>
+
+    <script src="./script.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".skillscards-crard"), {
+            max: 45,
+            speed: 400
+        });
+    </script>
+</body>
+</html>
